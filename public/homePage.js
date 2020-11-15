@@ -35,8 +35,12 @@ newBalance.addMoneyCallback = (data) => ApiConnector.addMoney(data, (response) =
     if (response.success) {
         ProfileWidget.showProfile(response.data);   
     }
-    //Вывод сообщения?? Не получается вывести сообщение
-    // newBalance.setMessage(risSuccess, message)   
+    //Вывод сообщения?? Не получается вывести сообщение.
+    //Как понял: isSuccess => response.success(true || false),
+    //message => response.error || тут затрудняюсь
+    //Вывода в блок ни какого у меня не происходит
+    //Прошу совета!
+    // newBalance.setMessage(isSuccess, message)   
 });
 
 //Конвертация 
