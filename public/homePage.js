@@ -54,7 +54,6 @@ newBalance.conversionMoneyCallback = (data) => ApiConnector.convertMoney(data, (
 
 //Перевод
 newBalance.sendMoneyCallback = (data) => ApiConnector.transferMoney(data, (response) => {
-    console.log(data)
     if (response.success) {
         ProfileWidget.showProfile(response.data); 
         newBalance.setMessage(response.success, 'Перевод выполнен');
