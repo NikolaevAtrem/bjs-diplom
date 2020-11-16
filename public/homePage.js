@@ -80,7 +80,7 @@ friend.addUserCallback = (data) => ApiConnector.addUserToFavorites(data, (respon
         friend.clearTable(response.data);
         friend.fillTable(response.data);
         newBalance.updateUsersList(response.data);
-        newBalance.setMessage(response.success, `Пользователь ${data.name} добавлен в друзья`);
+        newBalance.setMessage(response.success, `Пользователь ${data.name} добавлен(а) в друзья`);
     } else {
         newBalance.setMessage(response.success, response.error);
       }
